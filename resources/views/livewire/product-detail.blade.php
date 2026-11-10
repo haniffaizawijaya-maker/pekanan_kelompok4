@@ -22,9 +22,13 @@
             <p class="mt-3 text-2xl font-bold text-ink">{{ $product->formattedPrice() }}</p>
             <p class="mt-2 text-sm">
                 @if ($product->isOutOfStock())
-                    <span class="inline-block rounded-[6px] border-[1.5px] border-ink bg-beige px-2 py-1 text-xs font-bold text-ink">Stok habis</span>
+                    <span class="inline-flex items-center gap-1.5 border-[1.5px] border-ink bg-parchment px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-muted">
+                        <span class="h-1.5 w-1.5 rounded-full bg-muted"></span> Stok habis
+                    </span>
                 @else
-                    <span class="inline-block rounded-[6px] border-[1.5px] border-ink bg-mustard px-2 py-1 text-xs font-bold text-ink">Stok tersedia</span>
+                    <span class="inline-flex items-center gap-1.5 border-[1.5px] border-ink bg-parchment px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-ink">
+                        <span class="h-1.5 w-1.5 rounded-full bg-accent"></span> Stok tersedia
+                    </span>
                 @endif
             </p>
 

@@ -65,9 +65,13 @@
                                 <p class="mt-1 text-sm text-muted">{{ $item->formattedUnitPrice() }} per item</p>
                                 <p class="mt-1 text-sm">
                                     @if ($item->product->isOutOfStock())
-                                        <span class="inline-block rounded-[6px] border-[1.5px] border-ink bg-beige px-2 py-1 text-xs font-bold text-ink">Stok habis</span>
+                                        <span class="inline-flex items-center gap-1.5 border-[1.5px] border-ink bg-parchment px-2 py-0.5 text-xs font-bold uppercase tracking-wider text-muted">
+                                            <span class="h-1.5 w-1.5 rounded-full bg-muted"></span> Stok habis
+                                        </span>
                                     @else
-                                        <span class="inline-block rounded-[6px] border-[1.5px] border-ink bg-mustard px-2 py-1 text-xs font-bold text-ink">Stok tersedia, {{ $item->product->stock }} tersedia</span>
+                                        <span class="inline-flex items-center gap-1.5 border-[1.5px] border-ink bg-parchment px-2 py-0.5 text-xs font-bold uppercase tracking-wider text-ink">
+                                            <span class="h-1.5 w-1.5 rounded-full bg-accent"></span> Stok tersedia, {{ $item->product->stock }} tersedia
+                                        </span>
                                     @endif
                                 </p>
 

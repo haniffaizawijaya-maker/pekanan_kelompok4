@@ -1,4 +1,4 @@
-<header class="flex min-h-[64px] flex-wrap items-center gap-3 border-b-[1.5px] border-ink bg-mustard px-3 py-3 sm:flex-nowrap sm:px-4 sm:py-0">
+<header class="flex min-h-[64px] flex-wrap items-center gap-3 border-b-[1.5px] border-ink/40 bg-cream px-3 py-3 sm:flex-nowrap sm:px-6 sm:py-0">
     <button type="button" id="tombol-menu-seluler" aria-expanded="false" aria-controls="panel-menu-seluler" aria-label="Buka menu" class="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-[6px] border-[1.5px] border-ink bg-card text-ink focus:outline-none focus:ring-2 focus:ring-ink md:hidden">
         <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
             <path d="M4 7h16M4 12h16M4 17h16" />
@@ -47,11 +47,10 @@
                 </x-slot>
             </x-dropdown>
         @else
-            <span class="hidden items-center gap-2 sm:inline-flex">
-                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full border-[1.5px] border-ink bg-card text-sm font-bold text-ink" aria-hidden="true">?</span>
-                <span class="text-left">
-                    <span class="block text-sm font-bold leading-4">Tamu</span>
-                    <span class="block text-[11px] font-bold uppercase tracking-wider text-muted">Belum masuk</span>
+            <span class="hidden items-center gap-2 border-[1.5px] border-ink/30 bg-card px-2.5 py-1 text-xs sm:inline-flex">
+                <span class="inline-block h-2 w-2 rounded-full bg-accent" aria-hidden="true"></span>
+                <span class="text-left font-bold uppercase tracking-wider text-muted">
+                    <span class="text-ink">Tamu</span> / Belum masuk
                 </span>
             </span>
             <a href="{{ route('login') }}" class="inline-flex min-h-[44px] items-center rounded-[6px] border-[1.5px] border-ink bg-card px-4 text-sm font-bold text-ink focus:outline-none focus:ring-2 focus:ring-ink">Masuk</a>

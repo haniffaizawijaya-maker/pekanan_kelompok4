@@ -12,9 +12,9 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-ink antialiased">
-        <div class="min-h-screen bg-beige sm:px-4 sm:py-4">
-            <div class="mx-auto flex max-w-[1280px] border-ink bg-cream sm:border-[1.5px] md:min-h-[calc(100vh-2rem)]">
+    <body class="font-sans text-ink antialiased bg-beige">
+        <div class="min-h-screen bg-beige p-3 sm:p-5 lg:p-7">
+            <div class="mx-auto flex max-w-[1360px] border-[1.5px] border-ink/40 bg-cream shadow-2xl md:min-h-[calc(100vh-3.5rem)]">
                 @include('layouts.sidebar')
 
                 <div class="flex min-w-0 flex-1 flex-col">

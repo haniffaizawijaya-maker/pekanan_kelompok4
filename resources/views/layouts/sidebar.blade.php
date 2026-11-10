@@ -1,15 +1,15 @@
-<aside class="hidden w-[88px] shrink-0 flex-col border-r-[1.5px] border-ink bg-parchment md:flex" aria-label="Navigasi utama">
-    <a href="{{ route('catalog.index') }}" class="flex min-h-[64px] flex-col items-center justify-center gap-1 border-b-[1.5px] border-ink bg-mustard px-1 py-2 text-center text-ink focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ink" aria-label="{{ config('app.name', 'Sudoy') }}, ke katalog">
-        <svg class="h-7 w-7" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-            <rect x="8" y="8" width="32" height="32" rx="6" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+<aside class="hidden w-[96px] shrink-0 flex-col border-r-[1.5px] border-ink/40 bg-parchment md:flex" aria-label="Navigasi utama">
+    <a href="{{ route('catalog.index') }}" class="flex min-h-[64px] flex-col items-center justify-center gap-1 border-b-[1.5px] border-ink/40 bg-card px-1 py-2 text-center text-ink focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ink" aria-label="{{ config('app.name', 'Sudoy') }}, ke katalog">
+        <svg class="h-7 w-7 text-accent" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="8" y="8" width="32" height="32" rx="2" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
             <path d="M20 17.5 33 24l-13 6.5v-13Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
             <path d="M8 42h28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
         </svg>
-        <span class="text-[11px] font-bold leading-none">{{ config('app.name', 'Sudoy') }}</span>
+        <span class="text-[11px] font-bold uppercase tracking-wider">{{ config('app.name', 'Sudoy') }}</span>
     </a>
 
     <nav class="flex flex-1 flex-col">
-        <a href="{{ route('catalog.index') }}" class="flex min-h-[64px] flex-col items-center justify-center gap-1 border-b border-ink/20 px-1 py-2 text-center text-ink focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ink {{ request()->routeIs('catalog.index') || request()->routeIs('products.show') ? 'bg-mustard font-bold' : 'font-medium hover:bg-cream' }}" aria-current="{{ request()->routeIs('catalog.index') || request()->routeIs('products.show') ? 'page' : 'false' }}">
+        <a href="{{ route('catalog.index') }}" class="flex min-h-[64px] flex-col items-center justify-center gap-1 border-b border-ink/20 px-1 py-2 text-center text-ink focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ink {{ request()->routeIs('catalog.index') || request()->routeIs('products.show') ? 'bg-card font-bold border-l-4 border-l-accent' : 'font-medium hover:bg-card/50' }}" aria-current="{{ request()->routeIs('catalog.index') || request()->routeIs('products.show') ? 'page' : 'false' }}">
             <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
                 <rect x="4" y="4" width="7" height="7" rx="1" /><rect x="13" y="4" width="7" height="7" rx="1" /><rect x="4" y="13" width="7" height="7" rx="1" /><rect x="13" y="13" width="7" height="7" rx="1" />
             </svg>

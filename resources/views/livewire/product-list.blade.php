@@ -86,25 +86,35 @@
             </button>
         </div>
     @else
-        <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
             @foreach ($products as $product)
                 <article class="flex h-full flex-col overflow-hidden rounded-[6px] border-[1.5px] border-ink bg-card">
                     <a href="{{ route('products.show', $product->slug) }}" class="block border-b-[1.5px] border-ink" tabindex="-1" aria-hidden="true">
                         @include('partials.product-image', ['src' => $product->displayImageUrl(), 'alt' => $product->name, 'wrapperClass' => 'aspect-[3/4] w-full'])
                     </a>
                     <div class="flex flex-1 flex-col p-3 sm:p-4">
-                        <p class="text-[11px] font-bold uppercase tracking-wider text-muted">{{ $product->category->name }}</p>
+                        <div class="flex items-center justify-between gap-2">
+                            <p class="text-[11px] font-bold uppercase tracking-wider text-muted">{{ $product->category->name }}</p>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-muted">UNIT-{{ str_pad($product->id, 2, '0', STR_PAD_LEFT) }}</span>
+                        </div>
                         <h2 class="mt-1 text-left font-sans text-base font-bold leading-6 text-ink sm:text-lg">
-                            <a href="{{ route('products.show', $product->slug) }}" class="hover:underline focus:outline-none focus:ring-2 focus:ring-ink">
+                            <a href="{{ route('products.show', $product->slug) }}" class="hover:text-accent hover:underline focus:outline-none focus:ring-2 focus:ring-ink">
                                 {{ $product->name }}
                             </a>
                         </h2>
-                        <p class="mt-2 text-lg font-bold text-ink">{{ $product->formattedPrice() }}</p>
-                        <p class="mt-1 text-sm">
+                        <div class="mt-2 flex items-baseline justify-between border-y-[1.5px] border-ink/20 py-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-muted">HARGA</span>
+                            <span class="text-lg font-bold text-accent">{{ $product->formattedPrice() }}</span>
+                        </div>
+                        <p class="mt-2 text-sm">
                             @if ($product->isOutOfStock())
-                                <span class="inline-block rounded-[6px] border-[1.5px] border-ink bg-beige px-2 py-1 text-xs font-bold text-ink">Stok habis</span>
+                                <span class="inline-flex items-center gap-1.5 border-[1.5px] border-ink bg-parchment px-2 py-0.5 text-xs font-bold uppercase tracking-wider text-muted">
+                                    <span class="h-1.5 w-1.5 rounded-full bg-muted"></span> Stok habis
+                                </span>
                             @else
-                                <span class="inline-block rounded-[6px] border-[1.5px] border-ink bg-mustard px-2 py-1 text-xs font-bold text-ink">Stok tersedia</span>
+                                <span class="inline-flex items-center gap-1.5 border-[1.5px] border-ink bg-parchment px-2 py-0.5 text-xs font-bold uppercase tracking-wider text-ink">
+                                    <span class="h-1.5 w-1.5 rounded-full bg-accent"></span> Stok tersedia
+                                </span>
                             @endif
                         </p>
                         <div class="mt-auto flex flex-col gap-2 pt-4">
