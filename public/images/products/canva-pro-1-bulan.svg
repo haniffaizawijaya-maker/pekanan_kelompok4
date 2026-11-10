@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Artwork abstrak palet desain">
+  <rect width="600" height="800" fill="#FBF3DC"/>
+  <rect x="24" y="24" width="552" height="752" fill="none" stroke="#191919" stroke-width="3"/>
+  <rect x="48" y="48" width="180" height="120" rx="6" fill="#E8622C" stroke="#191919" stroke-width="3"/>
+  <rect x="244" y="48" width="120" height="120" rx="6" fill="#F2CE1B" stroke="#191919" stroke-width="3"/>
+  <rect x="380" y="48" width="172" height="120" rx="6" fill="#191919"/>
+  <rect x="48" y="184" width="120" height="120" rx="6" fill="#8AA8B8" stroke="#191919" stroke-width="3"/>
+  <rect x="184" y="184" width="180" height="120" rx="6" fill="#F3EAD3" stroke="#191919" stroke-width="3"/>
+  <rect x="380" y="184" width="172" height="120" rx="6" fill="#6B6257" stroke="#191919" stroke-width="3"/>
+  <rect x="48" y="320" width="504" height="16" fill="#191919"/>
+  <circle cx="300" cy="520" r="110" fill="#F2CE1B" stroke="#191919" stroke-width="4"/>
+  <path d="M268 462 L372 520 L268 578 Z" fill="#E8622C" stroke="#191919" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="48" y="680" width="240" height="48" rx="6" fill="#191919"/>
+  <rect x="304" y="680" width="120" height="48" rx="6" fill="#E8622C" stroke="#191919" stroke-width="3"/>
+  <rect x="440" y="680" width="112" height="48" rx="6" fill="#F2CE1B" stroke="#191919" stroke-width="3"/>
+</svg>

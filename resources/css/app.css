@@ -1,0 +1,25 @@
+/* Courier Prime di-host sendiri lewat @fontsource supaya font tampil
+   sama di semua mesin, termasuk tanpa akses Google Fonts.
+   Satu-satunya keluarga font seluruh UI, sesuai gambar referensi
+   (monospace gaya mesin tik). Bobot yang tersedia: 400 dan 700. */
+@import '@fontsource/courier-prime/400.css';
+@import '@fontsource/courier-prime/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Focus ring yang terlihat untuk navigasi keyboard di semua elemen. */
+:focus-visible {
+    outline: 2px solid #191919;
+    outline-offset: 2px;
+}
+
+::selection {
+    background: #f2ce1b;
+    color: #191919;
+}
+
+html {
+    background: #e9dfc9;
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Artwork abstrak gelombang suara">
+  <rect width="600" height="800" fill="#F3EAD3"/>
+  <rect x="24" y="24" width="552" height="752" fill="none" stroke="#191919" stroke-width="3"/>
+  <circle cx="300" cy="300" r="200" fill="none" stroke="#191919" stroke-width="3"/>
+  <circle cx="300" cy="300" r="160" fill="none" stroke="#E8622C" stroke-width="3"/>
+  <circle cx="300" cy="300" r="120" fill="#F2CE1B" stroke="#191919" stroke-width="3"/>
+  <circle cx="300" cy="300" r="76" fill="#E8622C" stroke="#191919" stroke-width="4"/>
+  <path d="M280 262 L348 300 L280 338 Z" fill="#FBF3DC" stroke="#191919" stroke-width="4" stroke-linejoin="round"/>
+  <g stroke="#191919" stroke-width="3">
+    <rect x="72" y="560" width="28" height="96" rx="6" fill="#191919"/>
+    <rect x="116" y="528" width="28" height="128" rx="6" fill="#E8622C"/>
+    <rect x="160" y="584" width="28" height="72" rx="6" fill="#F2CE1B"/>
+    <rect x="204" y="544" width="28" height="112" rx="6" fill="#191919"/>
+    <rect x="248" y="576" width="28" height="80" rx="6" fill="#E8622C"/>
+    <rect x="292" y="520" width="28" height="136" rx="6" fill="#191919"/>
+    <rect x="336" y="560" width="28" height="96" rx="6" fill="#F2CE1B"/>
+    <rect x="380" y="536" width="28" height="120" rx="6" fill="#E8622C"/>
+    <rect x="424" y="584" width="28" height="72" rx="6" fill="#191919"/>
+    <rect x="468" y="552" width="28" height="104" rx="6" fill="#F2CE1B"/>
+  </g>
+  <rect x="72" y="688" width="456" height="16" fill="#191919"/>
+  <circle cx="120" cy="728" r="12" fill="#E8622C" stroke="#191919" stroke-width="3"/>
+  <circle cx="300" cy="728" r="12" fill="#F2CE1B" stroke="#191919" stroke-width="3"/>
+  <circle cx="480" cy="728" r="12" fill="#191919"/>
+</svg>
